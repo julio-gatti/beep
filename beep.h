@@ -12,8 +12,10 @@
 // implementation
 static int beep_(int type) {
 #ifdef _WIN32
+  // https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messagebeep
   return !MessageBeep(type);
 #else
+  // https://en.wikipedia.org/wiki/Bell_character
   return putchar('\a'); // "alert" or "audible"
 #endif
 }
