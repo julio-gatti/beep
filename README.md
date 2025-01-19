@@ -1,5 +1,7 @@
 # beep
 
+boop
+
 ## Usage
 
 ```sh
