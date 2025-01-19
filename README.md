@@ -1,0 +1,5 @@
+# beep
+
+```sh
+beep [type]
+```
