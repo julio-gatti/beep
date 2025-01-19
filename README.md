@@ -16,6 +16,10 @@ beep [type]
 
 ### Windows
 
+```bat
+mmsys.cpl
+```
+
 ![Windows sound settings](windows_sound_settings.png)
 
 ## See also
