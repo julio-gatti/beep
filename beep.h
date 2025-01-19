@@ -1,7 +1,12 @@
 #ifdef _WIN32
 #include <Windows.h>
 #else
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define MB_ICONERROR 0x000000010L
+#define MB_ICONWARNING 0x000000030L
+#define MB_ICONINFORMATION 0x000000040L
 #endif
 
 // implementation
@@ -9,7 +14,7 @@ static int beep_(int type) {
 #ifdef _WIN32
   return !MessageBeep(type);
 #else
-  return 1;
+  return putchar('\a'); // "alert" or "audible"
 #endif
 }
 
